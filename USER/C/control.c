@@ -35,7 +35,7 @@ void control(void){
 	
 	g_nSpeedControlPeriod++;
 
-	if(g_nSpeedControlPeriod >= 3)
+	if(g_nSpeedControlPeriod >= 4)
 	{
 	
 	/***********************************位置外环**************************************/
