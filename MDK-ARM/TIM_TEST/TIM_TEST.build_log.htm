@@ -27,11 +27,23 @@ Project File Date:  05/31/2025
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Programs\Keil_v5\ARM\ARMCC\Bin'
 Build target 'TIM_TEST'
-assembling startup_stm32f411xe.s...
-linking...
-Program Size: Code=12262 RO-data=466 RW-data=96 ZI-data=2080  
-FromELF: creating hex file...
-"TIM_TEST\TIM_TEST.axf" - 0 Error(s), 0 Warning(s).
+compiling mpuiic.c...
+..\MPU6050\mpuiic.c(2): error:  #5: cannot open source input file "delay.h": No such file or directory
+  #include "delay.h"
+..\MPU6050\mpuiic.c: 0 warnings, 1 error
+compiling inv_mpu.c...
+..\MPU6050\eMPL\inv_mpu.c(28): error:  #5: cannot open source input file "delay.h": No such file or directory
+  #include "delay.h"
+..\MPU6050\eMPL\inv_mpu.c: 0 warnings, 1 error
+compiling mpu6050.c...
+..\MPU6050\mpu6050.c(2): error:  #5: cannot open source input file "delay.h": No such file or directory
+  #include "delay.h"
+..\MPU6050\mpu6050.c: 0 warnings, 1 error
+compiling inv_mpu_dmp_motion_driver.c...
+..\MPU6050\eMPL\inv_mpu_dmp_motion_driver.c(27): error:  #5: cannot open source input file "delay.h": No such file or directory
+  #include "delay.h"
+..\MPU6050\eMPL\inv_mpu_dmp_motion_driver.c: 0 warnings, 1 error
+"TIM_TEST\TIM_TEST.axf" - 4 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -55,6 +67,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:5.4.0
       Include file:  CMSIS\Core\Include\tz_context.h
+Target not created.
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

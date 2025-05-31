@@ -100,14 +100,14 @@ int main(void)
 	HAL_TIM_Base_Start(&htim2);
 	HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
 	HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_2);
-	__HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_1,1460);
-	__HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2,1530);
+	__HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_1,1550);
+	__HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2,1380);
 	HAL_UART_Receive_IT(&huart1,&uart1_rxbuff,1);
 	
-	set_p_i_d(&pid_positionX, 0.18, 0.004, 0.1);
-  set_p_i_d(&pid_positionY, 0.18, 0.004, 0.1);
-  set_p_i_d(&pid_speedX, 4.3, 0,  0.00);
-  set_p_i_d(&pid_speedY, 4.3, 0, 0.00);
+	set_p_i_d(&pid_positionX, 0.08, 0.015, 0.016);
+  set_p_i_d(&pid_positionY, 0.08, 0.035, 0.016);
+  set_p_i_d(&pid_speedX, -4.3, 0,  -0.0);
+  set_p_i_d(&pid_speedY, 4.3, 0, 0.0);
   
   target_position.target_position_x = 127;
   target_position.target_position_y = 127;
