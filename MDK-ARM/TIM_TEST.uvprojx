@@ -828,6 +828,16 @@
               <FileType>1</FileType>
               <FilePath>..\USER\C\uart.c</FilePath>
             </File>
+            <File>
+              <FileName>Print.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\C\Print.c</FilePath>
+            </File>
+            <File>
+              <FileName>Delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\C\Delay.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -867,6 +877,16 @@
               <FileName>uart.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\USER\H\uart.h</FilePath>
+            </File>
+            <File>
+              <FileName>Delay.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\USER\H\Delay.h</FilePath>
+            </File>
+            <File>
+              <FileName>Print.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\USER\H\Print.h</FilePath>
             </File>
           </Files>
         </Group>

@@ -9,5 +9,6 @@
 #include "stm32f4xx_hal.h"
 
 void Set_servo_angle(uint16_t angle1,uint16_t angle2);
+void LED_Toggle(void);
 
 #endif

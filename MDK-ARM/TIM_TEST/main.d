@@ -43,3 +43,9 @@ tim_test\main.o: D:\Programs\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 tim_test\main.o: D:\Programs\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 tim_test\main.o: ../USER/H/control.h
 tim_test\main.o: ../USER/H/servo.h
+tim_test\main.o: ../MPU6050/mpu6050.h
+tim_test\main.o: ../MPU6050/mpuiic.h
+tim_test\main.o: ../MPU6050/mpu6050.h
+tim_test\main.o: ../MPU6050/eMPL/inv_mpu.h
+tim_test\main.o: ../MPU6050/eMPL/inv_mpu_dmp_motion_driver.h
+tim_test\main.o: ../USER/H/Print.h

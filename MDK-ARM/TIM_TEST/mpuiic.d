@@ -38,3 +38,4 @@ tim_test\mpuiic.o: ..\MPU6050\mpu6050.h
 tim_test\mpuiic.o: ..\MPU6050\mpuiic.h
 tim_test\mpuiic.o: ../MPU6050/eMPL/inv_mpu.h
 tim_test\mpuiic.o: ../MPU6050/eMPL/inv_mpu_dmp_motion_driver.h
+tim_test\mpuiic.o: ../USER/H/delay.h

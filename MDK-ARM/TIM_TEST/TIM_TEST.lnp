@@ -33,6 +33,12 @@
 "tim_test\pid.o"
 "tim_test\servo.o"
 "tim_test\uart.o"
+"tim_test\print.o"
+"tim_test\delay.o"
+"tim_test\mpu6050.o"
+"tim_test\mpuiic.o"
+"tim_test\inv_mpu.o"
+"tim_test\inv_mpu_dmp_motion_driver.o"
 --strict --scatter "TIM_TEST\TIM_TEST.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

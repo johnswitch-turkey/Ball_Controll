@@ -37,7 +37,9 @@ void control(void){
 
 	if(g_nSpeedControlPeriod >= 3)
 	{
-	
+		if(pid_speedX.integral > 0 && pid_speedY.integral > 0 ){
+		LED_Toggle();
+		}
 	/***********************************位置外环**************************************/
 							if (position_timer++%2 == 0)           //位置环(外环)控制频率 是 速度环(内环)控制频率 的一半
 							{

@@ -42,3 +42,5 @@ tim_test\inv_mpu.o: ..\MPU6050\eMPL\inv_mpu_dmp_motion_driver.h
 tim_test\inv_mpu.o: ../MPU6050/mpu6050.h
 tim_test\inv_mpu.o: ../MPU6050/mpuiic.h
 tim_test\inv_mpu.o: ../MPU6050/mpu6050.h
+tim_test\inv_mpu.o: ../USER/H/delay.h
+tim_test\inv_mpu.o: ../Core/Inc/usart.h

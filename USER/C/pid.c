@@ -93,7 +93,7 @@ float get_pid_target(_pid *pid)
   */
 void set_p_i_d(_pid *pid, float p, float i, float d)
 {
-  	pid->Kp = p;    // 设置比例系数 P
+  pid->Kp = p;    // 设置比例系数 P
 	pid->Ki = i;    // 设置积分系数 I
 	pid->Kd = d;    // 设置微分系数 D
 }

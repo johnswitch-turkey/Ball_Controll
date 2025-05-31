@@ -15,3 +15,8 @@ void Set_servo_angle(uint16_t angle1,uint16_t angle2)
 	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, Y_out);
 }
 
+void LED_Toggle(void){
+	HAL_GPIO_TogglePin (GPIOC,GPIO_PIN_13);
+
+
+}

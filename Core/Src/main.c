@@ -28,6 +28,8 @@
 #include "pid.h"
 #include "control.h"
 #include "servo.h"
+#include "mpu6050.h"
+#include "Print.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,6 +51,8 @@
 
 /* USER CODE BEGIN PV */
 uint8_t uart1_rxbuff;
+uint8_t show_flag;
+float pitch, roll, yaw;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -95,7 +99,10 @@ int main(void)
   MX_I2C1_Init();
   MX_TIM2_Init();
   MX_USART1_UART_Init();
+  MX_TIM9_Init();
   /* USER CODE BEGIN 2 */
+	MPU_Init();
+	mpu_dmp_init();
 	HAL_TIM_Base_Start_IT(&htim1);
 	HAL_TIM_Base_Start(&htim2);
 	HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
@@ -117,7 +124,13 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-//Set_servo_angle(90,90);
+//		Set_servo_angle(90,90);
+		show_flag ++;
+		if (show_flag == 10){
+			mpu_dmp_get_data(&pitch, &roll, &yaw);
+			printf("%lf,%lf\r\n",pitch,roll);
+		}
+		
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

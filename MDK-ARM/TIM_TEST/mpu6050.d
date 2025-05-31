@@ -38,3 +38,8 @@ tim_test\mpu6050.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 tim_test\mpu6050.o: ..\MPU6050\mpu6050.h
 tim_test\mpu6050.o: ../MPU6050/eMPL/inv_mpu.h
 tim_test\mpu6050.o: ../MPU6050/eMPL/inv_mpu_dmp_motion_driver.h
+tim_test\mpu6050.o: ../USER/H/delay.h
+tim_test\mpu6050.o: ../Core/Inc/usart.h
+tim_test\mpu6050.o: ../Core/Inc/i2c.h
+tim_test\mpu6050.o: ../USER/H/Print.h
+tim_test\mpu6050.o: D:\Programs\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
